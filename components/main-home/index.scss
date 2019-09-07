@@ -1,0 +1,156 @@
+@import '../../scss/style.scss';
+
+.main-home{
+    background-image: url('/static/restaurant.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 750px;
+    padding-top: 24rem;
+    .main-home-wrapper{
+      margin: 0 auto;
+      width: 64%;
+        text-align: center;
+        .wrapper__title{
+            font-size: 9rem;
+            font-family: $font-family2;
+            color: white;
+            line-height: 1.2;
+        }
+        .wrapper__icon{
+            margin: 4rem 0 3rem 0;
+        }
+        .wrapper__btn{
+            .btn--black{
+                background-color: black;
+                opacity: 0.6;
+                padding: 1.5rem 4rem;
+                font-size: 1.8rem;
+                border-color: black;
+                &:hover{
+                    color: black;
+                    background-color: $primary;
+                    border-color:$primary;
+                }
+            }
+            .btn--white{
+                margin-left: 2rem;
+                background-color: white;
+                opacity: 0.6;
+                font-size: 1.8rem;
+                border-color: white;
+                padding: 1.5rem 4rem;
+                color: black;
+                &:hover{
+                    color: white;
+                    background-color: $primary;
+                    border-color:$primary;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .main-home{
+        .main-home-wrapper{
+            width: 80%;
+            .wrapper__title{
+                font-size: 8rem;
+            }
+            .wrapper__btn{
+                .btn--black, .btn--white{
+                    font-size: 1.4rem;
+                }
+                
+            }
+        }
+    }
+}
+@media screen and (max-width: 993px){
+    .main-home{
+        .main-home-wrapper{
+            width: 80%;
+            .wrapper__title{
+                font-size: 7rem;
+            }
+            .wrapper__icon{
+                img{
+                    width: 40%;
+                }
+            }
+            .wrapper__btn{
+                // width: 70%;
+                .btn--black, .btn--white{
+                    font-size: 1.3rem;
+                }
+                
+            }
+        }
+    }
+}
+@media screen and (max-width: 768px){
+    .main-home{
+        .main-home-wrapper{
+            width: 85%;
+            .wrapper__title{
+                font-size: 6rem;
+            }
+            .wrapper__icon{
+                img{
+                    width: 40%;
+                }
+            }
+            .wrapper__btn{
+                // width: 75%;
+                .btn--black, .btn--white{
+                    font-size: 1.2rem;
+                }
+                
+            }
+        }
+    }
+}
+@media screen and (max-width: 576px){
+    .main-home{
+        .main-home-wrapper{
+            width: 85%;
+            .wrapper__title{
+                font-size: 5rem;
+            }
+            .wrapper__icon{
+                img{
+                    width: 40%;
+                }
+            }
+            .wrapper__btn{
+                .btn--black, .btn--white{
+                    font-size: 1rem;
+                }
+                
+            }
+        }
+    }
+}
+@media screen and (max-width: 480px){
+    .main-home{
+        .main-home-wrapper{
+            .wrapper__title{
+                font-size: 4rem;
+            }
+            
+            .wrapper__btn{
+                margin: auto;
+                width: 80%;
+                .btn--black, .btn--white{
+                    padding: 1rem 3rem;
+                }
+                .btn--white{
+                    margin-left: 0px;
+                    margin-top: 2rem;
+                }
+                
+            }
+        }
+    }
+}
