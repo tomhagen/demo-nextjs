@@ -2,13 +2,27 @@ import React, { Component, Fragment } from 'react';
 import './index.scss';
 import Link from 'next/link';
 import Header from '../header';
+import { connect } from 'react-redux';
+import Axios from 'axios';
+import { requestGetData } from '../../actions/data';
+
 
 class MainHome extends Component {
+
+    constructor(props) {
+        super(props);
+        this.state = {
+            currency: {}
+        }
+    }
+    componentDidMount() {
+        this.props.onGetData();
+    }
     render() {
         return (
             <Fragment>
                 <section className="main-home">
-                    <Header/>
+                    <Header />
                     <div className="main-home-wrapper">
                         <div className="wrapper__title">
                             the right ingredients for the right food
@@ -22,11 +36,23 @@ class MainHome extends Component {
                         </div>
                     </div>
                 </section>
-               
+
 
             </Fragment>
         );
     }
 }
 
-export default MainHome;
+const mapStateToProps = state => {
+    return {
+        data: state.news
+    }
+}
+const mapDispatchToProps = dispatch => {
+    return {
+        onGetData: () => {
+            dispatch(requestGetData());
+        }
+    }
+}
+export default connect(mapStateToProps, mapDispatchToProps)(MainHome);

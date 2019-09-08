@@ -1,9 +1,14 @@
+import * as types from '../constants/dataTypes';
 
-let initialState = [];
+let initialState = {};
 
 const newsReducer = (state = initialState, action) => {
     switch (action.type) {
-        default: return [...state]
+        case types.GET_DATA:
+            let updateData = { ...state };
+            updateData = action.payload;
+            return updateData
+        default: return { ...state }
     }
 }
 export default newsReducer
