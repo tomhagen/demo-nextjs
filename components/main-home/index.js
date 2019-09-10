@@ -6,7 +6,6 @@ import { connect } from 'react-redux';
 import Axios from 'axios';
 import { requestGetData } from '../../actions/data';
 
-
 class MainHome extends Component {
 
     constructor(props) {
@@ -25,7 +24,8 @@ class MainHome extends Component {
                     <Header />
                     <div className="main-home-wrapper">
                         <div className="wrapper__title">
-                            the right ingredients for the right food
+                            the right ingredients for the right food 
+                            <Link href="/lamborghini"><a>Lamborghini</a></Link>
                         </div>
                         <div className="wrapper__icon">
                             <img src="./static/bg-icon.png" />

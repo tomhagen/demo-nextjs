@@ -7,4 +7,98 @@
     background-position: center;
     height: 71rem;
     
+    .container{
+        width: 65%;
+        margin: auto;
+        padding-top: 7rem;
+        .wrapper{
+            display: flex;
+            flex-wrap: wrap;
+            
+            .text__container{
+                flex: 50%;
+                max-width: 50%;
+                text-align: center;
+                padding-top: 6rem;
+                .text__container__title{
+                    font-family: $font-family2;
+                    font-size: 3.6rem;
+                    color: $primary;
+
+                }
+                .text__container__desc{
+                    font-size: 1.6rem;
+                    color: $primary;
+                    color: black;
+                    margin: 3rem auto 5rem;
+                    width: 90%;
+                }
+            }
+            .img__container{
+                flex: 50%;
+                max-width: 50%;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .food{
+        .container{
+            width: 80%;
+        }
+    }
+}
+@media screen and (max-width: 1200px){
+    .food{
+        .container{
+            .wrapper{
+                .text__container{
+                    .text__container__title{
+                        font-size: 2.5rem;
+                    }
+                    .text__container__desc{
+                        font-size: 1.4rem;
+                        margin: 2rem auto 2rem;
+                    }
+                    .text__container__signature{
+                        width: 70%;
+                    }
+                }
+                // .img__container{
+                //     img{
+                //         width: 50%;
+                //     }
+                // }
+            }
+        }
+    }
+}
+@media screen and (max-width: 768px){
+    .food{
+        .container{
+            width: 80%;
+            .wrapper{
+               
+                .text__container{
+                    flex: 100%;
+                    max-width: 100%;
+                    .text__container__signature{
+                        width: 50%;
+                    }
+                }
+                .img__container{
+                    flex: 100%;
+                    max-width: 100%;
+                    text-align: center;
+                    img{
+                        width: 70%;
+                    }
+                }
+            }
+        }
+    }
 }
