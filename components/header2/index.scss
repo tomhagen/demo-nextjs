@@ -1,0 +1,98 @@
+@import "../../scss/style.scss";
+.header2 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  .wrapper {
+    width: 90%;
+    margin: auto;
+    .header-box {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 0;
+      .nav-main {
+        display: flex;
+        flex-wrap: wrap;
+        .header-logo {
+          width: 100px;
+          img {
+            height: 60px;
+            width: auto;
+          }
+        }
+        .header-main {
+          width: calc(100%-150px);
+          padding: 20px 0;
+          transition: all 0.5s;
+          .main-menu {
+            .nav__link {
+              display: inline-block;
+              margin: 0 10px;
+              .nav__item {
+                font-size: 1.6rem;
+                text-decoration: none;
+                color: white;
+                overflow: hidden;
+                position: relative;
+                &:hover {
+                  color: $primary;
+                }
+                &:before {
+                  content: "";
+                  position: absolute;
+                  left: 51%;
+                  right: 51%;
+                  bottom: 0;
+                  background: $primary;
+                  height: 1px;
+                  transition-property: left, right;
+                  transition-duration: 0.3s;
+                  transition-timing-function: ease-out;
+                }
+                &:hover:before {
+                  left: 0;
+                  right: 0;
+                }
+              }
+            }
+          }
+          .sub-menu {
+            margin-top: 1.2rem;
+            .nav__link {
+              display: inline-block;
+              margin: 0 10px;
+              .nav__item {
+                font-size: 1.2rem;
+                text-decoration: none;
+                color: white;
+                &:hover {
+                  color: $primary;
+                }
+              }
+            }
+          }
+        }
+        .fixed {
+          padding: 10px 0;
+          transition: all 0.5s;
+        }
+      }
+      .nav-sub {
+        color: white;
+        font-size: 1.7rem;
+        i {
+          margin: 0 10px;
+          &:hover {
+            color: $primary;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}

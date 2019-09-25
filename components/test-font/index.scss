@@ -1,0 +1,19 @@
+@import '../../scss/style.scss';
+
+@font-face{
+    font-family: nyt;
+    src: url(/static/fonts/cheltenham-normal-700.ttf)
+}
+h1{
+    font-size: 3rem;
+    font-family: nyt;
+    font-weight: 700;
+    // letter-spacing: 0.2px;
+    // line-height: 2rem;
+}
+p{
+    font-size: 2rem;
+    font-family: nyt;
+    // font-family: nyt-imperiasd;
+    // letter-spacing: 0.1px;
+}

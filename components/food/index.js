@@ -9,9 +9,9 @@ class Food extends Component {
           <div className="container">
             <div className="wrapper">
               <div className="text__container">
-                <h2 className="text__container__title">Just the right food</h2>
+                <h2 className="text__container__title wow fadeIn" data-wow-delay="0.5s">Just the right food</h2>
                 <img src="static/icon.png" className="text__container__icon" />
-                <p className="text__container__desc">
+                <p className="text__container__desc wow fadeIn" data-wow-delay="0.5s">
                   If you’ve been to one of our restaurants, you’ve seen – and
                   tasted – what keeps our customers coming back for more.
                   Perfect materials and freshly baked food, delicious Lambda
@@ -20,7 +20,7 @@ class Food extends Component {
                 </p>
                 <img src="static/signature.png" className="text__container__signature" />
               </div>
-              <div className="img__container">
+              <div className="img__container wow fadeIn" data-wow-delay="1s">
                 <img src="static/food.png" />
               </div>
             </div>

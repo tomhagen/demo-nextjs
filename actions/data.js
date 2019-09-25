@@ -5,10 +5,10 @@ export const requestGetData = () => {
     return dispatch => {
         Axios({
             method: 'GET',
-            url: 'https://api.exchangeratesapi.io/latest'
+            url: 'http://localhost:8000/api/posts'
         })
             .then(res => {
-                console.log(res.data.rates);
+                console.log(res.data);
                 dispatch(actGetData(res.data))
 
             })
