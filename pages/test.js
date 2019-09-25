@@ -13,7 +13,7 @@ class WeatherAPI extends Component {
     Axios({
       method: "GET",
       url:
-        "http://api.worldweatheronline.com/premium/v1/past-weather.ashx?key=bb11fe1292f747d5a6584956192509&q=Gia+Lai&date=2019-07-01&enddate=2019-07-31&tp=6&format=json&includelocation=yes&showlocaltime=yes"
+        "https://api.worldweatheronline.com/premium/v1/past-weather.ashx?key=bb11fe1292f747d5a6584956192509&q=Gia+Lai&date=2019-07-01&enddate=2019-07-31&tp=6&format=json&includelocation=yes&showlocaltime=yes"
     })
       .then(result => {
         this.setState({ data: result.data });

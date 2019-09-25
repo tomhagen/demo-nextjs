@@ -4354,7 +4354,7 @@ function (_Component) {
 
       axios__WEBPACK_IMPORTED_MODULE_8___default()({
         method: "GET",
-        url: "http://api.worldweatheronline.com/premium/v1/past-weather.ashx?key=bb11fe1292f747d5a6584956192509&q=Gia+Lai&date=2019-07-01&enddate=2019-07-31&tp=6&format=json&includelocation=yes&showlocaltime=yes"
+        url: "https://api.worldweatheronline.com/premium/v1/past-weather.ashx?key=bb11fe1292f747d5a6584956192509&q=Gia+Lai&date=2019-07-01&enddate=2019-07-31&tp=6&format=json&includelocation=yes&showlocaltime=yes"
       }).then(function (result) {
         _this2.setState({
           data: result.data
@@ -4521,7 +4521,7 @@ function (_Component) {
 
 /***/ }),
 
-/***/ 1:
+/***/ 2:
 /*!**********************************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Ftest&absolutePagePath=D%3A%5CWORK%5CCODE%5CFULL%20STACK%20JAVASCRIPT%5CWebsite%5Cnextjs-demo%5Cnextjs%5Cpages%5Ctest.js ***!
   \**********************************************************************************************************************************************************************/
@@ -4544,5 +4544,5 @@ module.exports = dll_01f9a3fa864a7b7414d8;
 
 /***/ })
 
-},[[1,"static/runtime/webpack.js"]]]);
+},[[2,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=test.js.map
