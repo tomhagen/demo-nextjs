@@ -53,6 +53,9 @@ function (_Component) {
         },
         __self: this
       }, __jsx("td", {
+        style: {
+          borderRight: '1px solid green'
+        },
         scope: "col",
         __source: {
           fileName: _jsxFileName,
@@ -60,69 +63,102 @@ function (_Component) {
         },
         __self: this
       }, item.date), __jsx("td", {
+        style: {
+          color: 'green'
+        },
         scope: "col",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 11
         },
         __self: this
-      }, item.maxtempC), __jsx("td", {
+      }, item.hourly[0].tempC), __jsx("td", {
+        style: {
+          color: 'green'
+        },
         scope: "col",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 12
         },
         __self: this
-      }, item.mintempC), __jsx("td", {
+      }, item.hourly[0].humidity), __jsx("td", {
+        style: {
+          color: 'green',
+          borderRight: '1px solid green'
+        },
         scope: "col",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 13
         },
         __self: this
-      }, item.avgtempC), __jsx("td", {
+      }, item.hourly[0].windspeedKmph), __jsx("td", {
+        style: {
+          color: 'blue'
+        },
         scope: "col",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 14
         },
         __self: this
-      }, item.hourly[0].tempC), __jsx("td", {
+      }, item.hourly[1].tempC), __jsx("td", {
+        style: {
+          color: 'blue'
+        },
         scope: "col",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 15
         },
         __self: this
-      }, item.hourly[0].humidity), __jsx("td", {
+      }, item.hourly[1].humidity), __jsx("td", {
+        style: {
+          color: 'blue',
+          borderRight: '1px solid blue'
+        },
         scope: "col",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 16
         },
         __self: this
-      }, item.hourly[1].tempC), __jsx("td", {
+      }, item.hourly[1].windspeedKmph), __jsx("td", {
+        style: {
+          color: 'red'
+        },
         scope: "col",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 17
         },
         __self: this
-      }, item.hourly[1].humidity), __jsx("td", {
+      }, item.hourly[2].tempC), __jsx("td", {
+        style: {
+          color: 'red'
+        },
         scope: "col",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 18
         },
         __self: this
-      }, item.hourly[2].tempC), __jsx("td", {
+      }, item.hourly[2].humidity), __jsx("td", {
+        style: {
+          color: 'red',
+          borderRight: '1px solid red'
+        },
         scope: "col",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 19
         },
         __self: this
-      }, item.hourly[2].humidity), __jsx("td", {
+      }, item.hourly[2].windspeedKmph), __jsx("td", {
+        style: {
+          color: 'green'
+        },
         scope: "col",
         __source: {
           fileName: _jsxFileName,
@@ -130,6 +166,9 @@ function (_Component) {
         },
         __self: this
       }, item.hourly[3].tempC), __jsx("td", {
+        style: {
+          color: 'green'
+        },
         scope: "col",
         __source: {
           fileName: _jsxFileName,
@@ -137,13 +176,141 @@ function (_Component) {
         },
         __self: this
       }, item.hourly[3].humidity), __jsx("td", {
+        style: {
+          color: 'green',
+          borderRight: '1px solid green'
+        },
         scope: "col",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 22
         },
         __self: this
-      }, item.uvIndex)));
+      }, item.hourly[3].windspeedKmph), __jsx("td", {
+        style: {
+          color: 'blue'
+        },
+        scope: "col",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 23
+        },
+        __self: this
+      }, item.hourly[4].tempC), __jsx("td", {
+        style: {
+          color: 'blue'
+        },
+        scope: "col",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 24
+        },
+        __self: this
+      }, item.hourly[4].humidity), __jsx("td", {
+        style: {
+          color: 'blue',
+          borderRight: '1px solid blue'
+        },
+        scope: "col",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 25
+        },
+        __self: this
+      }, item.hourly[4].windspeedKmph), __jsx("td", {
+        style: {
+          color: 'red'
+        },
+        scope: "col",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 26
+        },
+        __self: this
+      }, item.hourly[5].tempC), __jsx("td", {
+        style: {
+          color: 'red'
+        },
+        scope: "col",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 27
+        },
+        __self: this
+      }, item.hourly[5].humidity), __jsx("td", {
+        style: {
+          color: 'red',
+          borderRight: '1px solid red'
+        },
+        scope: "col",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 28
+        },
+        __self: this
+      }, item.hourly[5].windspeedKmph), __jsx("td", {
+        style: {
+          color: 'green'
+        },
+        scope: "col",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 29
+        },
+        __self: this
+      }, item.hourly[6].tempC), __jsx("td", {
+        style: {
+          color: 'green'
+        },
+        scope: "col",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 30
+        },
+        __self: this
+      }, item.hourly[6].humidity), __jsx("td", {
+        style: {
+          color: 'green',
+          borderRight: '1px solid green'
+        },
+        scope: "col",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 31
+        },
+        __self: this
+      }, item.hourly[6].windspeedKmph), __jsx("td", {
+        style: {
+          color: 'blue'
+        },
+        scope: "col",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 32
+        },
+        __self: this
+      }, item.hourly[7].tempC), __jsx("td", {
+        style: {
+          color: 'blue'
+        },
+        scope: "col",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 33
+        },
+        __self: this
+      }, item.hourly[7].humidity), __jsx("td", {
+        style: {
+          color: 'blue',
+          borderRight: '1px solid blue'
+        },
+        scope: "col",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 34
+        },
+        __self: this
+      }, item.hourly[7].windspeedKmph)));
     }
   }]);
 
@@ -4309,7 +4476,7 @@ var _jsxFileName = "D:\\WORK\\CODE\\FULL STACK JAVASCRIPT\\Website\\nextjs-demo\
 var __jsx = react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement;
 
 
-
+ // import Tbody2 from "../components/tbody2";
 
 var WeatherAPI =
 /*#__PURE__*/
@@ -4324,17 +4491,194 @@ function (_Component) {
     _this = Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__["default"])(this, Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__["default"])(WeatherAPI).call(this, props));
 
     Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this), "renderWeatherApi", function () {
-      var data = _this.state.data; // this.state.data.data.weather.map((item, index) => {
-      //   return item;
-      // });
-
+      var data = _this.state.data;
       return data.data ? data.data.weather.map(function (item, index) {
         return __jsx(_components_tbody__WEBPACK_IMPORTED_MODULE_9__["default"], {
           item: item,
           key: index,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 32
+            lineNumber: 179
+          },
+          __self: this
+        });
+      }) : "";
+    });
+
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this), "renderWeatherApi2", function () {
+      var data2 = _this.state.data2;
+      return data2.data ? data2.data.weather.map(function (item, index) {
+        return __jsx(_components_tbody__WEBPACK_IMPORTED_MODULE_9__["default"], {
+          item: item,
+          key: index,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 190
+          },
+          __self: this
+        });
+      }) : "";
+    });
+
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this), "renderWeatherApi3", function () {
+      var data3 = _this.state.data3;
+      return data3.data ? data3.data.weather.map(function (item, index) {
+        return __jsx(_components_tbody__WEBPACK_IMPORTED_MODULE_9__["default"], {
+          item: item,
+          key: index,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 201
+          },
+          __self: this
+        });
+      }) : "";
+    });
+
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this), "renderWeatherApi4", function () {
+      var data4 = _this.state.data4;
+      return data4.data ? data4.data.weather.map(function (item, index) {
+        return __jsx(_components_tbody__WEBPACK_IMPORTED_MODULE_9__["default"], {
+          item: item,
+          key: index,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 212
+          },
+          __self: this
+        });
+      }) : "";
+    });
+
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this), "renderWeatherApi5", function () {
+      var data5 = _this.state.data5;
+      return data5.data ? data5.data.weather.map(function (item, index) {
+        return __jsx(_components_tbody__WEBPACK_IMPORTED_MODULE_9__["default"], {
+          item: item,
+          key: index,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 223
+          },
+          __self: this
+        });
+      }) : "";
+    });
+
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this), "renderWeatherApi6", function () {
+      var data6 = _this.state.data6;
+      return data6.data ? data6.data.weather.map(function (item, index) {
+        return __jsx(_components_tbody__WEBPACK_IMPORTED_MODULE_9__["default"], {
+          item: item,
+          key: index,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 234
+          },
+          __self: this
+        });
+      }) : "";
+    });
+
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this), "renderWeatherApi7", function () {
+      var data7 = _this.state.data7;
+      return data7.data ? data7.data.weather.map(function (item, index) {
+        return __jsx(_components_tbody__WEBPACK_IMPORTED_MODULE_9__["default"], {
+          item: item,
+          key: index,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 245
+          },
+          __self: this
+        });
+      }) : "";
+    });
+
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this), "renderWeatherApi8", function () {
+      var data8 = _this.state.data8;
+      return data8.data ? data8.data.weather.map(function (item, index) {
+        return __jsx(_components_tbody__WEBPACK_IMPORTED_MODULE_9__["default"], {
+          item: item,
+          key: index,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 256
+          },
+          __self: this
+        });
+      }) : "";
+    });
+
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this), "renderWeatherApi9", function () {
+      var data9 = _this.state.data9;
+      return data9.data ? data9.data.weather.map(function (item, index) {
+        return __jsx(_components_tbody__WEBPACK_IMPORTED_MODULE_9__["default"], {
+          item: item,
+          key: index,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 267
+          },
+          __self: this
+        });
+      }) : "";
+    });
+
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this), "renderWeatherApi10", function () {
+      var data10 = _this.state.data10;
+      return data10.data ? data10.data.weather.map(function (item, index) {
+        return __jsx(_components_tbody__WEBPACK_IMPORTED_MODULE_9__["default"], {
+          item: item,
+          key: index,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 278
+          },
+          __self: this
+        });
+      }) : "";
+    });
+
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this), "renderWeatherApi11", function () {
+      var data11 = _this.state.data11;
+      return data11.data ? data11.data.weather.map(function (item, index) {
+        return __jsx(_components_tbody__WEBPACK_IMPORTED_MODULE_9__["default"], {
+          item: item,
+          key: index,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 289
+          },
+          __self: this
+        });
+      }) : "";
+    });
+
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this), "renderWeatherApi12", function () {
+      var data12 = _this.state.data12;
+      return data12.data ? data12.data.weather.map(function (item, index) {
+        return __jsx(_components_tbody__WEBPACK_IMPORTED_MODULE_9__["default"], {
+          item: item,
+          key: index,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 300
+          },
+          __self: this
+        });
+      }) : "";
+    });
+
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this), "renderWeatherApi13", function () {
+      var data13 = _this.state.data13;
+      return data13.data ? data13.data.weather.map(function (item, index) {
+        return __jsx(_components_tbody__WEBPACK_IMPORTED_MODULE_9__["default"], {
+          item: item,
+          key: index,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 311
           },
           __self: this
         });
@@ -4342,53 +4686,214 @@ function (_Component) {
     });
 
     _this.state = {
-      data: {}
+      data: {},
+      // dữ liệu tháng 9/2018
+      data2: {},
+      // dữ liệu tháng 10/2018
+      data3: {},
+      // dữ liệu tháng 11/2018
+      data4: {},
+      // dữ liệu tháng 12/2018
+      data5: {},
+      // dữ liệu tháng 1/2019
+      data6: {},
+      // dữ liệu tháng 2/2019
+      data7: {},
+      // dữ liệu tháng 3/2019
+      data8: {},
+      // dữ liệu tháng 4/2019
+      data9: {},
+      // dữ liệu tháng 5/2019
+      data10: {},
+      // dữ liệu tháng 6/2019
+      data11: {},
+      // dữ liệu tháng 7/2019
+      data12: {},
+      // dữ liệu tháng 8/2019
+      data13: {} // dữ liệu tháng 9/2019
+
     };
     return _this;
-  }
+  } // -------------------- CALL API ------------------------
+
 
   Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(WeatherAPI, [{
     key: "componentDidMount",
     value: function componentDidMount() {
       var _this2 = this;
 
+      // DỮ LIỆU THÁNG 9/2018
       axios__WEBPACK_IMPORTED_MODULE_8___default()({
         method: "GET",
-        url: "https://api.worldweatheronline.com/premium/v1/past-weather.ashx?key=bb11fe1292f747d5a6584956192509&q=Gia+Lai&date=2019-07-01&enddate=2019-07-31&tp=6&format=json&includelocation=yes&showlocaltime=yes"
+        url: "https://api.worldweatheronline.com/premium/v1/past-weather.ashx?key=bb11fe1292f747d5a6584956192509&q=Gia+Lai&date=2018-09-01&enddate=2018-09-30&tp=3&format=json&includelocation=yes&showlocaltime=yes"
       }).then(function (result) {
         _this2.setState({
           data: result.data
         });
       })["catch"](function (err) {
         return console.log(err);
+      }); // DỮ LIỆU THÁNG 10/2018
+
+      axios__WEBPACK_IMPORTED_MODULE_8___default()({
+        method: "GET",
+        url: "https://api.worldweatheronline.com/premium/v1/past-weather.ashx?key=bb11fe1292f747d5a6584956192509&q=Gia+Lai&date=2018-10-01&enddate=2018-10-31&tp=3&format=json&includelocation=yes&showlocaltime=yes"
+      }).then(function (result) {
+        _this2.setState({
+          data2: result.data
+        });
+      })["catch"](function (err) {
+        return console.log(err);
+      }); // DỮ LIỆU THÁNG 11/2018
+
+      axios__WEBPACK_IMPORTED_MODULE_8___default()({
+        method: "GET",
+        url: "https://api.worldweatheronline.com/premium/v1/past-weather.ashx?key=bb11fe1292f747d5a6584956192509&q=Gia+Lai&date=2018-11-01&enddate=2018-11-30&tp=3&format=json&includelocation=yes&showlocaltime=yes"
+      }).then(function (result) {
+        _this2.setState({
+          data3: result.data
+        });
+      })["catch"](function (err) {
+        return console.log(err);
+      }); // DỮ LIỆU THÁNG 12/2018
+
+      axios__WEBPACK_IMPORTED_MODULE_8___default()({
+        method: "GET",
+        url: "https://api.worldweatheronline.com/premium/v1/past-weather.ashx?key=bb11fe1292f747d5a6584956192509&q=Gia+Lai&date=2018-12-01&enddate=2018-12-31&tp=3&format=json&includelocation=yes&showlocaltime=yes"
+      }).then(function (result) {
+        _this2.setState({
+          data4: result.data
+        });
+      })["catch"](function (err) {
+        return console.log(err);
+      }); // DỮ LIỆU THÁNG 1/2019
+
+      axios__WEBPACK_IMPORTED_MODULE_8___default()({
+        method: "GET",
+        url: "https://api.worldweatheronline.com/premium/v1/past-weather.ashx?key=bb11fe1292f747d5a6584956192509&q=Gia+Lai&date=2019-01-01&enddate=2019-01-31&tp=3&format=json&includelocation=yes&showlocaltime=yes"
+      }).then(function (result) {
+        _this2.setState({
+          data5: result.data
+        });
+      })["catch"](function (err) {
+        return console.log(err);
+      }); // DỮ LIỆU THÁNG 2/2019
+
+      axios__WEBPACK_IMPORTED_MODULE_8___default()({
+        method: "GET",
+        url: "https://api.worldweatheronline.com/premium/v1/past-weather.ashx?key=bb11fe1292f747d5a6584956192509&q=Gia+Lai&date=2019-02-01&enddate=2019-02-28&tp=3&format=json&includelocation=yes&showlocaltime=yes"
+      }).then(function (result) {
+        _this2.setState({
+          data6: result.data
+        });
+      })["catch"](function (err) {
+        return console.log(err);
+      }); // DỮ LIỆU THÁNG 3/2019
+
+      axios__WEBPACK_IMPORTED_MODULE_8___default()({
+        method: "GET",
+        url: "https://api.worldweatheronline.com/premium/v1/past-weather.ashx?key=bb11fe1292f747d5a6584956192509&q=Gia+Lai&date=2019-03-01&enddate=2019-03-31&tp=3&format=json&includelocation=yes&showlocaltime=yes"
+      }).then(function (result) {
+        _this2.setState({
+          data7: result.data
+        });
+      })["catch"](function (err) {
+        return console.log(err);
+      }); // DỮ LIỆU THÁNG 4/2019
+
+      axios__WEBPACK_IMPORTED_MODULE_8___default()({
+        method: "GET",
+        url: "https://api.worldweatheronline.com/premium/v1/past-weather.ashx?key=bb11fe1292f747d5a6584956192509&q=Gia+Lai&date=2019-04-01&enddate=2019-04-30&tp=3&format=json&includelocation=yes&showlocaltime=yes"
+      }).then(function (result) {
+        _this2.setState({
+          data8: result.data
+        });
+      })["catch"](function (err) {
+        return console.log(err);
+      }); // DỮ LIỆU THÁNG 5/2019
+
+      axios__WEBPACK_IMPORTED_MODULE_8___default()({
+        method: "GET",
+        url: "https://api.worldweatheronline.com/premium/v1/past-weather.ashx?key=bb11fe1292f747d5a6584956192509&q=Gia+Lai&date=2019-05-01&enddate=2019-05-31&tp=3&format=json&includelocation=yes&showlocaltime=yes"
+      }).then(function (result) {
+        _this2.setState({
+          data9: result.data
+        });
+      })["catch"](function (err) {
+        return console.log(err);
+      }); // DỮ LIỆU THÁNG 6/2019
+
+      axios__WEBPACK_IMPORTED_MODULE_8___default()({
+        method: "GET",
+        url: "https://api.worldweatheronline.com/premium/v1/past-weather.ashx?key=bb11fe1292f747d5a6584956192509&q=Gia+Lai&date=2019-06-01&enddate=2019-06-30&tp=3&format=json&includelocation=yes&showlocaltime=yes"
+      }).then(function (result) {
+        _this2.setState({
+          data10: result.data
+        });
+      })["catch"](function (err) {
+        return console.log(err);
+      }); // DỮ LIỆU THÁNG 7/2019
+
+      axios__WEBPACK_IMPORTED_MODULE_8___default()({
+        method: "GET",
+        url: "https://api.worldweatheronline.com/premium/v1/past-weather.ashx?key=bb11fe1292f747d5a6584956192509&q=Gia+Lai&date=2019-07-01&enddate=2019-07-31&tp=3&format=json&includelocation=yes&showlocaltime=yes"
+      }).then(function (result) {
+        _this2.setState({
+          data11: result.data
+        });
+      })["catch"](function (err) {
+        return console.log(err);
+      }); // DỮ LIỆU THÁNG 8/2019
+
+      axios__WEBPACK_IMPORTED_MODULE_8___default()({
+        method: "GET",
+        url: "https://api.worldweatheronline.com/premium/v1/past-weather.ashx?key=bb11fe1292f747d5a6584956192509&q=Gia+Lai&date=2019-08-01&enddate=2019-08-31&tp=3&format=json&includelocation=yes&showlocaltime=yes"
+      }).then(function (result) {
+        _this2.setState({
+          data12: result.data
+        });
+      })["catch"](function (err) {
+        return console.log(err);
+      }); // DỮ LIỆU THÁNG 9/2019
+
+      axios__WEBPACK_IMPORTED_MODULE_8___default()({
+        method: "GET",
+        url: "https://api.worldweatheronline.com/premium/v1/past-weather.ashx?key=bb11fe1292f747d5a6584956192509&q=Gia+Lai&date=2019-09-01&enddate=2019-09-31&tp=3&format=json&includelocation=yes&showlocaltime=yes"
+      }).then(function (result) {
+        _this2.setState({
+          data13: result.data
+        });
+      })["catch"](function (err) {
+        return console.log(err);
       });
-    }
+    } // -------------------------- RENDER DATA ------------------------
+    // DỮ LIỆU THÁNG 9/2018
+
   }, {
     key: "render",
+    // ------------ RENDER VIEW ------------------
     value: function render() {
-      console.log(this.state.data.data);
       return __jsx(react__WEBPACK_IMPORTED_MODULE_7__["Fragment"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 39
+          lineNumber: 318
         },
         __self: this
       }, __jsx("div", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 40
+          lineNumber: 319
         },
         __self: this
       }, __jsx("h1", {
         style: {
           fontSize: "4rem",
-          fontWeight: 'bold',
+          fontWeight: "bold",
           margin: "auto",
-          color: 'green'
+          color: "green"
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 41
+          lineNumber: 320
         },
         __self: this
       }, "GIA LAI HISTORICAL WEATHER DATA TABLE")), __jsx("table", {
@@ -4398,119 +4903,416 @@ function (_Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 45
+          lineNumber: 331
         },
         __self: this
       }, __jsx("thead", {
+        style: {
+          fontSize: "33px",
+          background: "green",
+          color: "white"
+        },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 46
+          lineNumber: 332
         },
         __self: this
       }, __jsx("tr", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 47
+          lineNumber: 335
         },
         __self: this
       }, __jsx("th", {
+        style: {
+          borderRight: "1px solid green",
+          width: "100px"
+        },
         scope: "col",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 48
+          lineNumber: 336
         },
         __self: this
-      }, "Day"), __jsx("th", {
+      }, "Year/Month/Day"), __jsx("th", {
         scope: "col",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 49
+          lineNumber: 342
         },
         __self: this
-      }, "Max Temp"), __jsx("th", {
+      }, "0:00AM(Temperature)"), __jsx("th", {
         scope: "col",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 50
+          lineNumber: 343
         },
         __self: this
-      }, "Min Temp"), __jsx("th", {
+      }, "0:00AM(Humidity)"), __jsx("th", {
+        style: {
+          borderRight: "1px solid green"
+        },
         scope: "col",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 51
+          lineNumber: 344
         },
         __self: this
-      }, "Avg Temp"), __jsx("th", {
+      }, "0:00AM(Wind)"), __jsx("th", {
         scope: "col",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 52
+          lineNumber: 347
         },
         __self: this
-      }, "Temp(0:00AM)"), __jsx("th", {
+      }, "3:00AM(Temperature)"), __jsx("th", {
         scope: "col",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 53
+          lineNumber: 348
         },
         __self: this
-      }, "Humidity(0:00AM)"), __jsx("th", {
+      }, "3:00AM(Humidity)"), __jsx("th", {
+        style: {
+          borderRight: "1px solid blue"
+        },
         scope: "col",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 54
+          lineNumber: 349
         },
         __self: this
-      }, "Temp(6:00AM)"), __jsx("th", {
+      }, "3:00AM(Wind)"), __jsx("th", {
         scope: "col",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 55
+          lineNumber: 352
         },
         __self: this
-      }, "Humidity(6:00AM)"), __jsx("th", {
+      }, "6:00AM(Temperature)"), __jsx("th", {
         scope: "col",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 56
+          lineNumber: 353
         },
         __self: this
-      }, "Temp(12:00AM)"), __jsx("th", {
+      }, "6:00AM(Humidity)"), __jsx("th", {
+        style: {
+          borderRight: "1px solid red"
+        },
         scope: "col",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 57
+          lineNumber: 354
         },
         __self: this
-      }, "Humidity(12:00AM)"), __jsx("th", {
+      }, "6:00AM(Wind)"), __jsx("th", {
         scope: "col",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 58
+          lineNumber: 357
         },
         __self: this
-      }, "Temp(18:00AM)"), __jsx("th", {
+      }, "9:00AM(Temperature)"), __jsx("th", {
         scope: "col",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 59
+          lineNumber: 358
         },
         __self: this
-      }, "Humidity(18:00AM)"), __jsx("th", {
+      }, "9:00AM(Humidity)"), __jsx("th", {
+        style: {
+          borderRight: "1px solid green"
+        },
         scope: "col",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 60
+          lineNumber: 359
         },
         __self: this
-      }, "UV Index"))), __jsx("tbody", {
+      }, "9:00AM(Wind)"), __jsx("th", {
+        scope: "col",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 63
+          lineNumber: 362
         },
         __self: this
-      }, this.renderWeatherApi())));
+      }, "12:00AM(Temperature)"), __jsx("th", {
+        scope: "col",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 363
+        },
+        __self: this
+      }, "12:00AM(Humidity)"), __jsx("th", {
+        style: {
+          borderRight: "1px solid blue"
+        },
+        scope: "col",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 364
+        },
+        __self: this
+      }, "12:00AM(Wind)"), __jsx("th", {
+        scope: "col",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 367
+        },
+        __self: this
+      }, "15:00AM(Temperature)"), __jsx("th", {
+        scope: "col",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 368
+        },
+        __self: this
+      }, "15:00AM(Humidity)"), __jsx("th", {
+        style: {
+          borderRight: "1px solid red"
+        },
+        scope: "col",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 369
+        },
+        __self: this
+      }, "15:00AM(Wind)"), __jsx("th", {
+        scope: "col",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 372
+        },
+        __self: this
+      }, "18:00AM(Temperature)"), __jsx("th", {
+        scope: "col",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 373
+        },
+        __self: this
+      }, "18:00AM(Humidity)"), __jsx("th", {
+        style: {
+          borderRight: "1px solid green"
+        },
+        scope: "col",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 374
+        },
+        __self: this
+      }, "18:00AM(Wind)"), __jsx("th", {
+        scope: "col",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 377
+        },
+        __self: this
+      }, "21:00AM(Temperature)"), __jsx("th", {
+        scope: "col",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 378
+        },
+        __self: this
+      }, "21:00AM(Humidity)"), __jsx("th", {
+        style: {
+          borderRight: "1px solid blue"
+        },
+        scope: "col",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 379
+        },
+        __self: this
+      }, "21:00AM(Wind)"))), __jsx("tbody", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 384
+        },
+        __self: this
+      }, this.renderWeatherApi(), __jsx("br", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 386
+        },
+        __self: this
+      }), __jsx("p", {
+        style: {
+          borderBottom: '2px solid red'
+        },
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 387
+        },
+        __self: this
+      }), this.renderWeatherApi2(), __jsx("br", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 389
+        },
+        __self: this
+      }), __jsx("p", {
+        style: {
+          borderBottom: '2px solid red'
+        },
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 390
+        },
+        __self: this
+      }), this.renderWeatherApi3(), __jsx("br", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 392
+        },
+        __self: this
+      }), __jsx("p", {
+        style: {
+          borderBottom: '2px solid red'
+        },
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 393
+        },
+        __self: this
+      }), this.renderWeatherApi4(), __jsx("br", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 395
+        },
+        __self: this
+      }), __jsx("p", {
+        style: {
+          borderBottom: '2px solid red'
+        },
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 396
+        },
+        __self: this
+      }), this.renderWeatherApi5(), __jsx("br", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 398
+        },
+        __self: this
+      }), __jsx("p", {
+        style: {
+          borderBottom: '2px solid red'
+        },
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 399
+        },
+        __self: this
+      }), this.renderWeatherApi6(), __jsx("br", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 401
+        },
+        __self: this
+      }), __jsx("p", {
+        style: {
+          borderBottom: '2px solid red'
+        },
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 402
+        },
+        __self: this
+      }), this.renderWeatherApi7(), __jsx("br", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 404
+        },
+        __self: this
+      }), __jsx("p", {
+        style: {
+          borderBottom: '2px solid red'
+        },
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 405
+        },
+        __self: this
+      }), this.renderWeatherApi8(), __jsx("br", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 407
+        },
+        __self: this
+      }), __jsx("p", {
+        style: {
+          borderBottom: '2px solid red'
+        },
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 408
+        },
+        __self: this
+      }), this.renderWeatherApi9(), __jsx("br", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 410
+        },
+        __self: this
+      }), __jsx("p", {
+        style: {
+          borderBottom: '2px solid red'
+        },
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 411
+        },
+        __self: this
+      }), this.renderWeatherApi10(), __jsx("br", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 413
+        },
+        __self: this
+      }), __jsx("p", {
+        style: {
+          borderBottom: '2px solid red'
+        },
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 414
+        },
+        __self: this
+      }), this.renderWeatherApi11(), __jsx("br", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 416
+        },
+        __self: this
+      }), __jsx("p", {
+        style: {
+          borderBottom: '2px solid red'
+        },
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 417
+        },
+        __self: this
+      }), this.renderWeatherApi12(), __jsx("br", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 419
+        },
+        __self: this
+      }), __jsx("p", {
+        style: {
+          borderBottom: '2px solid red'
+        },
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 420
+        },
+        __self: this
+      }), this.renderWeatherApi13())));
     }
   }]);
 
@@ -4521,7 +5323,7 @@ function (_Component) {
 
 /***/ }),
 
-/***/ 2:
+/***/ 9:
 /*!**********************************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Ftest&absolutePagePath=D%3A%5CWORK%5CCODE%5CFULL%20STACK%20JAVASCRIPT%5CWebsite%5Cnextjs-demo%5Cnextjs%5Cpages%5Ctest.js ***!
   \**********************************************************************************************************************************************************************/
@@ -4544,5 +5346,5 @@ module.exports = dll_01f9a3fa864a7b7414d8;
 
 /***/ })
 
-},[[2,"static/runtime/webpack.js"]]]);
+},[[9,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=test.js.map
