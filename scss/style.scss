@@ -1,5 +1,38 @@
-
 $primary: #dab33e;
 $green: #ffffff;
-$font-family: 'Gentium Book Basic', serif;
-$font-family2: 'Yeseva One', cursive;
+$font-family: "Gentium Book Basic", serif;
+$font-family2: "Yeseva One", cursive;
+
+@mixin flex($direction: row, $content: null, $items: null, $wrap: null) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $content;
+  align-items: $items;
+  flex-wrap: $wrap;
+}
+@mixin button($background, $color, $fontSize, $padding, $radius) {
+  background: $background;
+  color: $color;
+  font-size: $fontSize;
+  padding: $padding;
+  border-radius: $radius;
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  -o-border-radius: $radius;
+}
+
+@mixin position($position, $top, $left, $right, $bottom) {
+  position: $position;
+  top: $top;
+  left: $left;
+  right: $right;
+  bottom: $bottom;
+}
+
+@mixin text($color, $size, $weight) {
+  color: $color;
+  font-size: $size;
+  font-weight: $weight;
+  text-decoration: none;
+}
