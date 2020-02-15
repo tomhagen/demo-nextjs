@@ -24,7 +24,9 @@ class WoopraHeader extends Component {
   render() {
     return (
       <Fragment>
-        <header className={`woopra__header ${this.state.isScroll ? "scroll": ""}`}>
+        <header
+          className={`woopra__header ${this.state.isScroll ? "scroll" : ""}`}
+        >
           <div className="woopra__header__container">
             <label htmlFor="collapse" className="btn__collapse">
               <i className="fa fa-bars"></i>
@@ -220,6 +222,73 @@ class WoopraHeader extends Component {
                   <li className="woopra__nav__item">
                     <a href="#" className="woopra__nav__link hasDropdown">
                       company
+                      <ul className="woopra__submenu">
+                        <li className="woopra__submenu__item">
+                          <a href="#" className="woopra__submenu__link">
+                            learn
+                          </a>
+                          <p className="woopra__submenu__link__content">
+                            Seamless implementation with guides, APIs, SDKs and
+                            docs.
+                          </p>
+                        </li>
+                        <li className="woopra__submenu__item">
+                          <a href="#" className="woopra__submenu__link">
+                            company
+                          </a>
+                          <p className="woopra__submenu__link__content">
+                            Seamless implementation with guides, APIs, SDKs and
+                            docs.
+                          </p>
+                        </li>
+                      </ul>
+                      <div
+                        className="woopra__submenu__mobile collapse"
+                        id="collapse"
+                      >
+                        <ul className="woopra__submenu__mobile__main">
+                          <li className="woopra__submenu__mobile__item">
+                            <a
+                              href="#"
+                              className="woopra__submenu__mobile__link"
+                            >
+                              learn
+                            </a>
+                          </li>
+                          <li className="woopra__submenu__mobile__item">
+                            <a
+                              href="#"
+                              className="woopra__submenu__mobile__link"
+                            >
+                              company
+                            </a>
+                          </li>
+                          <li className="woopra__submenu__mobile__item">
+                            <a
+                              href="#"
+                              className="woopra__submenu__mobile__link"
+                            >
+                              working
+                            </a>
+                          </li>
+                          <li className="woopra__submenu__mobile__item">
+                            <a
+                              href="#"
+                              className="woopra__submenu__mobile__link"
+                            >
+                              wiilso
+                            </a>
+                          </li>
+                          <li className="woopra__submenu__mobile__item">
+                            <a
+                              href="#"
+                              className="woopra__submenu__mobile__link"
+                            >
+                              woopra
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
                     </a>
                   </li>
                 </ul>
@@ -228,7 +297,12 @@ class WoopraHeader extends Component {
                 <a className="woopra__nav__btn__login" href="#">
                   log in
                 </a>
-                <a className={`woopra__nav__btn__start ${this.state.isScroll ? "changeColor":""}`} href="#">
+                <a
+                  className={`woopra__nav__btn__start ${
+                    this.state.isScroll ? "changeColor" : ""
+                  }`}
+                  href="#"
+                >
                   start for free
                 </a>
               </li>

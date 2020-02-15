@@ -1,0 +1,82 @@
+@import "../../scss/style.scss";
+
+.video {
+  background-image: url("/static/img/wqs641yf0e1lhytwo0bw.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 37rem;
+  width: 50%;
+  padding-top: 10rem;
+  box-shadow: 0px 2px 4px rgba(1, 14, 40, 0.05);
+  margin: auto;
+  position: relative;
+  cursor: pointer;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 7rem;
+    height: 7rem;
+    top: 50%;
+    left: 50%;
+    // transform: translate(-50%, -50%);
+    // -webkit-transform: translate(-50%, -50%);
+    // -moz-transform: translate(-50%, -50%);
+    // -ms-transform: translate(-50%, -50%);
+    // -o-transform: translate(-50%, -50%);
+
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background: rgba(66, 134, 245, 0.85) url("/static/img/play.svg");
+    box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
+    cursor: pointer;
+    transition: transform 1s;
+    -webkit-transition: transform 1s;
+    -moz-transition: transform 1s;
+    -ms-transition: transform 1s;
+    -o-transition: transform 1s;
+  }
+  &:hover::after {
+    transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transition: transform 1s;
+    -webkit-transition: transform 1s;
+    -moz-transition: transform 1s;
+    -ms-transition: transform 1s;
+    -o-transition: transform 1s;
+  }
+  &:hover {
+    box-shadow: 0 10px 18px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
+  }
+
+  .video__container {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1000;
+    padding: 100px;
+    background: rgba(170, 183, 196, 0.75);
+    transition: opacity 0.25s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    height: 100%;
+    .iframe__video{
+      // margin: 0 auto;
+      width: 90vw;
+      height: 80vh;
+    }
+  }
+  .video__container.show {
+    display: block;
+  }
+}

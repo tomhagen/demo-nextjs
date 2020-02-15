@@ -1,6 +1,38 @@
 @import "../../scss/style.scss";
 
-.customers{
-    min-height: 700px;
-    width: 100%;
+.customers {
+  //   min-height: 700px;
+  width: 100%;
+  padding: 4rem 0;
+  .customer__container {
+    width: 72%;
+    margin: 0 auto;
+
+    .customer__container__flex {
+      @include flex(column, null, center, wrap);
+
+      .customer__title {
+        @include text(#99a9bb, 2.6rem, 300);
+      }
+      .customer__logos {
+        @include flex(row, center, center, wrap);
+        .customer__logos__item {
+          max-width: 17rem;
+          padding: 1.5rem;
+          .img {
+            width: 100%;
+          }
+        }
+      }
+      .customer__btn-learn-more {
+        @include button(#5a96f6, white, 1.2rem, 1.7rem 3.5rem, 2.5rem);
+        text-transform: uppercase;
+        text-decoration: none;
+        font-weight: bold;
+        &:hover{
+            @include button(#6899e7, white, 1.2rem, 1.7rem 3.5rem, 2.5rem);
+        }
+      }
+    }
+  }
 }

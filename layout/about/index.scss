@@ -1,0 +1,62 @@
+@import "../../scss/style.scss";
+
+.about {
+  .about__container {
+    width: 62%;
+    margin: auto;
+    text-align: center;
+    .about__header {
+      .about__header__title {
+        @include text(#364167, 3rem, 800);
+      }
+    }
+    .about__timeline {
+      padding-top: 3rem;
+      .about__timeline__milestone {
+        position: relative;
+        padding: 2rem 0;
+        &::before {
+          content: "";
+          width: 3px;
+          height: 100%;
+          position: absolute;
+          left: 11rem;
+          top: 0;
+          background: #cadfff;
+          z-index: 0;
+        }
+        &::after {
+          content: "";
+          width: 12px;
+          height: 12px;
+          position: absolute;
+          top: 2.5rem;
+          left: 10.5rem;
+          border-radius: 100%;
+          -webkit-border-radius: 100%;
+          -moz-border-radius: 100%;
+          -ms-border-radius: 100%;
+          -o-border-radius: 100%;
+          background: #ffffff;
+          border: 3px solid #2e7efe;
+          z-index: 5;
+        }
+        .milestone__year {
+          @include text(#00386c, 1.8rem, 800);
+          float: left;
+          width: 12rem;
+          line-height: 3rem;
+        }
+        .milestone__metrics {
+          overflow: hidden;
+          text-align: left;
+          padding: 0 2rem;
+          li {
+            font-size: 3rem;
+            line-height: 1.7;
+          }
+        }
+      }
+    }
+  }
+}

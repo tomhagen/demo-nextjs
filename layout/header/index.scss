@@ -11,12 +11,14 @@
   -moz-transition: height 0.5s;
   -ms-transition: height 0.5s;
   -o-transition: height 0.5s;
+
   .woopra__header__container {
     max-width: 90vw;
     margin: 0 auto;
     width: 100%;
     display: flex;
     align-items: center;
+
     .woopra__nav__main {
       padding: 0;
       margin: 0;
@@ -194,19 +196,22 @@
   .woopra__header {
     .woopra__header__container {
       .woopra__nav__main {
-        transform: translateY(-100%);
-        -webkit-transform: translateY(-100%);
-        -moz-transform: translateY(-100%);
-        -ms-transform: translateY(-100%);
-        -o-transform: translateY(-100%);
-        flex-direction: column;
+        transform: translateX(-100%);
+        -webkit-transform: translateX(-100%);
+        -moz-transform: translateX(-100%);
+        -ms-transform: translateX(-100%);
+        -o-transform: translateX(-100%);
+        // flex-direction: column;
         flex-wrap: wrap;
+        display: none;
         .woopra__nav__btn__hiring {
-          margin-left: 0;
+          // margin-left: 0;
+          display: none;
         }
         .woopra__nav__primary {
-          margin-top: 3rem;
+          margin-top: 0;
           margin-bottom: 3rem;
+
           .woopra__nav__list {
             flex-direction: column;
             .woopra__nav__item {
@@ -265,21 +270,21 @@
       .btn__collapse {
         display: block;
         position: fixed;
-        top: 2.5rem;
-        right: 2.5rem;
+        top: 2rem;
+        right: 2rem;
         cursor: pointer;
-        width: 5rem;
-        height: 5rem;
+        width: 4rem;
+        height: 4rem;
         text-align: center;
-        line-height: 5rem;
+        line-height: 4rem;
         z-index: 10;
       }
       .woopra__nav__bg {
         position: fixed;
-        top: 2.5rem;
-        right: 2.5rem;
-        width: 5rem;
-        height: 5rem;
+        top: 2rem;
+        right: 2rem;
+        width: 4rem;
+        height: 4rem;
         border-radius: 5rem;
         -webkit-border-radius: 5rem;
         -moz-border-radius: 5rem;
@@ -303,11 +308,16 @@
         -o-transform: scale(50);
       }
       .inp__collapse:checked ~ .woopra__nav__main {
-        transform: translateY(50%);
-        -webkit-transform: translateY(50%);
-        -moz-transform: translateY(50%);
-        -ms-transform: translateY(50%);
-        -o-transform: translateY(50%);
+        transform: translateX(0%);
+        -webkit-transform: translateX(0%);
+        -moz-transform: translateX(0%);
+        -ms-transform: translateX(0%);
+        -o-transform: translateX(0%);
+        display: block;
+        position: absolute;
+        top: 0;
+        height: 100vh;
+        overflow-y: auto;
       }
       .inp__collapse:checked ~ .woopra__nav__brand__mobile {
         display: none;

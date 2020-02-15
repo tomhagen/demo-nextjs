@@ -1,11 +1,12 @@
 import React, { Component, Fragment } from "react";
 import { Editor } from "@tinymce/tinymce-react";
-// import CKEditor from 'ckeditor4-react';
+import UploadImage from "../upload-img";
+// import CKEditor from "ckeditor4-react";
 
 class Form extends Component {
-    handleEditorChange = e => {
-      console.log("Content was updated:", e.target.getContent());
-    };
+  handleEditorChange = e => {
+    console.log("Content was updated:", e.target.getContent());
+  };
 
   render() {
     return (
@@ -34,14 +35,12 @@ class Form extends Component {
           <Editor
             apiKey="2401yg30kqflbmjler8dg6nm3m9a025nwj1co8a65p5qjtqd"
             initialValue="<p>This is the initial content of the editor</p>"
-           
             init={{
               plugins: "link image code table",
-           
+
               toolbar:
                 "undo redo | bold italic | alignleft aligncenter alignright | code | table tabledelete | tableprops tablerowprops tablecellprops | tableinsertrowbefore tableinsertrowafter tabledeleterow | tableinsertcolbefore tableinsertcolafter tabledeletecol link image",
-
-              
+              images_upload_url: 'upload.php'
             }}
             onChange={this.handleEditorChange}
           />
@@ -53,7 +52,11 @@ class Form extends Component {
               rows="3"
             ></textarea>
           </div> */}
+
+          {/* <CKEditor data="<p>This is an example CKEditor 4 instance.</p>" /> */}
+         
         </form>
+        <UploadImage/>
       </Fragment>
     );
   }
